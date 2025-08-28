@@ -35,7 +35,92 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+<style>
+  /* General Section Styles */
+#service-details.section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
 
+/* Container & Grid */
+#service-details .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#service-details .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Sidebar Navigation */
+.services-list {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.services-list a {
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.services-list a:hover,
+.services-list a.active {
+  background-color: #007bff;
+  color: #fff;
+  border-left: 4px solid #0056b3;
+}
+
+/* Headings */
+#service-details h2 {
+  font-size: 24px;
+  color: #0056b3;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+#service-details h6 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+/* Paragraph Text */
+#service-details p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  #service-details .row {
+    flex-direction: column;
+  }
+
+  .services-list {
+    margin-bottom: 30px;
+  }
+}
+
+</style>
 <body class="service-details-page">
 
   <header id="header" class="header dark-background d-flex flex-column">
@@ -61,12 +146,12 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#">Dropdown 1</a></li>
             <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -82,8 +167,8 @@
             <li><a href="#">Dropdown 3</a></li>
             <li><a href="#">Dropdown 4</a></li>
           </ul>
-        </li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </li> -->
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
 
@@ -109,9 +194,9 @@
 
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="row gy-12">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
             <div class="services-list">
               <a href="#" class="active">Chart of Accounts</a>
               <a href="#">Accounting Services</a>
@@ -121,102 +206,123 @@
               <a href="#">Financial Reporting &amp; Analysis</a>
               <a href="#">Transaction Logging</a>
             </div>
-
-            <h2><b> Chart of Accounts</b></h2>
-            <h6><b>Comprehensive Asset Tracking:</b></h6>
-            <p>Detailed accounts for all assets improve visibility
-              into the company&#39;s resources and their value.</p>
-
-              <h6><b>Accurate Revenue Classification:</b></h6>
-            <p>Clear categorization of revenue streams helps in
-              identifying profitable areas and optimizing sales strategies.</p>
-
-
-              <h6>Precise Expense Management:</h6>
-            <p>Detailed expense accounts allow for better
-              budgeting and cost control, identifying areas for cost reduction.</p>
-
-              <h6>Effective Liability Monitoring:</h6>
-            <p>Tracking liabilities helps in managing debt levels
-              and ensuring timely payments, maintaining financial stability.</p>
-
-              <h6>Clear Equity Representation:</h6>
-            <p>Proper recording of equity reflects the owner&#39;s
-              investment and retained earnings, showcasing financial health.</p>
-
-              <h2> <b> Accounting Services </b></h2>
-              <h6>Financial Accounting:</h6>
-              <p>Focuses on preparing financial statements and reports for external users
-                such as investors and regulators.</p>
-  
-                <h6>Managerial Accounting:</h6>
-              <p>Provides internal management with detailed financial and operational
-                information for decision-making.</p>
-  
-  
-                <h6>Cost Accounting:</h6>
-              <p>Analyzes and controls costs associated with production and operations to
-                improve efficiency and profitability.</p>
-  
-                <h4>Tax Accounting:</h6>
-              <p>Deals with tax return preparation and planning to ensure compliance with tax
-                laws and regulations.</p>
-  
-                <h6>Nonprofit Accounting:</h6>
-              <p>Handles financial management for nonprofit organizations, focusing on
-                fund allocation and grant compliance.</p>
-
-
-                <h2> <b> Accounts Receivable (AR) Process Management </b> </h2>
-                <h6>Invoice Generation and Delivery:</h6>
-              <p>Create and send accurate invoices to customers for goods or
-                services provided.</p>
-  
-                <h6>Payment Collection:</h6>
-              <p>Track and receive payments from customers through various methods
-                such as checks, electronic transfers, or online payments.</p>
-  
-  
-                <h6>Accounts Tracking:</h6>
-              <p>Monitor and record outstanding invoices and payments to manage
-                receivables efficiently.</p>
-  
-                <h6>Credit Management:</h6>
-              <p>Assess and manage customer credit limits, terms, and risk to minimize
-                potential bad debts.</p>
-  
-                <h6>Payment Application:</h6>
-              <p>Apply received payments to the correct customer accounts and invoices
-                to update balances.</p>
-
-                <h6>Collections Follow-Up:</h6>
-                <p>Follow up on overdue invoices, send reminders, and manage collection
-                  efforts to ensure timely payment.</p>
-
-
-                  
           </div>
+          <div class="col-lg-11" data-aos="fade-up" data-aos-delay="200">
+             <!-- Chart of Accounts -->
+        <h2><b>Chart of Accounts</b></h2>
+        <h6><b>Comprehensive Asset Tracking:</b></h6>
+        <p>Detailed accounts for all assets improve visibility into the company's resources and their value.</p>
+        <h6><b>Accurate Revenue Classification:</b></h6>
+        <p>Clear categorization of revenue streams helps in identifying profitable areas and optimizing sales strategies.</p>
+        <h6><b>Precise Expense Management:</b></h6>
+        <p>Detailed expense accounts allow for better budgeting and cost control, identifying areas for cost reduction.</p>
+        <h6><b>Effective Liability Monitoring:</b></h6>
+        <p>Tracking liabilities helps in managing debt levels and ensuring timely payments, maintaining financial stability.</p>
+        <h6><b>Clear Equity Representation:</b></h6>
+        <p>Proper recording of equity reflects the owner's investment and retained earnings, showcasing financial health.</p>
 
-          <!-- <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-            <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
-            <p>
-              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
-            </ul>
-            <p>
-              Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
-            </p>
-            <p>
-              Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
-            </p>
-          </div> -->
+        <!-- Accounting Services -->
+        <h2><b>Accounting Services</b></h2>
+        <h6><b>Financial Accounting:</b></h6>
+        <p>Focuses on preparing financial statements and reports for external users such as investors and regulators.</p>
+        <h6><b>Managerial Accounting:</b></h6>
+        <p>Provides internal management with detailed financial and operational information for decision-making.</p>
+        <h6><b>Cost Accounting:</b></h6>
+        <p>Analyzes and controls costs associated with production and operations to improve efficiency and profitability.</p>
+        <h6><b>Tax Accounting:</b></h6>
+        <p>Deals with tax return preparation and planning to ensure compliance with tax laws and regulations.</p>
+        <h6><b>Nonprofit Accounting:</b></h6>
+        <p>Handles financial management for nonprofit organizations, focusing on fund allocation and grant compliance.</p>
 
-        </div>
+        <!-- AR Process Management -->
+        <h2><b>Accounts Receivable (AR) Process Management</b></h2>
+        <h6><b>Invoice Generation and Delivery:</b></h6>
+        <p>Create and send accurate invoices to customers for goods or services provided.</p>
+        <h6><b>Payment Collection:</b></h6>
+        <p>Track and receive payments from customers through various methods such as checks, electronic transfers, or online payments.</p>
+        <h6><b>Accounts Tracking:</b></h6>
+        <p>Monitor and record outstanding invoices and payments to manage receivables efficiently.</p>
+        <h6><b>Credit Management:</b></h6>
+        <p>Assess and manage customer credit limits, terms, and risk to minimize potential bad debts.</p>
+        <h6><b>Payment Application:</b></h6>
+        <p>Apply received payments to the correct customer accounts and invoices to update balances.</p>
+        <h6><b>Collections Follow-Up:</b></h6>
+        <p>Follow up on overdue invoices, send reminders, and manage collection efforts to ensure timely payment.</p>
+
+        <!-- Invoice to Cash Management -->
+        <h2><b>Invoice to Cash Management</b></h2>
+        <h6><b>Invoice Receipt and Logging:</b></h6>
+        <p>Receive and record invoices from vendors or service providers.</p>
+        <h6><b>Invoice Verification and Matching:</b></h6>
+        <p>Verify the accuracy of invoices and match them with purchase orders and receiving reports.</p>
+        <h6><b>Approval Workflow:</b></h6>
+        <p>Route invoices through the necessary approval process to ensure validity and authorization.</p>
+        <h6><b>Payment Scheduling:</b></h6>
+        <p>Determine payment dates based on invoice terms and prioritize payments.</p>
+        <h6><b>Payment Processing:</b></h6>
+        <p>Execute payments through methods such as checks, electronic transfers, or online payment systems.</p>
+        <h6><b>Account Reconciliation:</b></h6>
+        <p>Reconcile accounts payable records with bank statements and vendor statements to ensure accuracy.</p>
+        <h6><b>Vendor Management:</b></h6>
+        <p>Maintain up-to-date vendor information and manage relationships, including handling inquiries and resolving disputes.</p>
+        <h6><b>Expense Tracking:</b></h6>
+        <p>Monitor and categorize expenses to ensure they align with the budget and financial plans.</p>
+        <h6><b>Compliance and Reporting:</b></h6>
+        <p>Ensure compliance with regulatory requirements and generate reports for internal and external stakeholders.</p>
+
+        <!-- Budgeting & Forecasting -->
+        <h2><b>Budgeting & Forecasting</b></h2>
+        <h6><b>Budget Preparation:</b></h6>
+        <p>Develop initial budget drafts based on organizational goals, historical data, and strategic plans.</p>
+        <h6><b>Revenue Projections:</b></h6>
+        <p>Estimate future revenue based on historical performance, market analysis, and sales strategies.</p>
+        <h6><b>Expense Planning:</b></h6>
+        <p>Outline expected expenses, including fixed and variable costs, and allocate resources accordingly.</p>
+        <h6><b>Budget Approval:</b></h6>
+        <p>Review and obtain approval for the budget from relevant stakeholders, such as management or the board.</p>
+        <h6><b>Variance Analysis:</b></h6>
+        <p>Compare actual financial performance against budgeted figures to identify and analyze variances.</p>
+        <h6><b>Financial Modeling:</b></h6>
+        <p>Create financial models to simulate various scenarios and assess the impact on budget and forecasts.</p>
+
+        <!-- Financial Reporting & Analysis -->
+        <h2><b>Financial Reporting & Analysis</b></h2>
+        <h6><b>Financial Statement Preparation:</b></h6>
+        <p>Compile and generate key financial statements such as the Income Statement, Balance Sheet, and Cash Flow Statement.</p>
+        <h6><b>Variance Analysis:</b></h6>
+        <p>Compare actual financial performance against budgeted or forecasted figures to identify and analyze variances.</p>
+        <h6><b>Ratio Analysis:</b></h6>
+        <p>Assess financial health using key ratios such as liquidity, profitability, and solvency ratios.</p>
+        <h6><b>Trend Analysis:</b></h6>
+        <p>Examine financial trends over time to identify patterns and forecast future performance.</p>
+        <h6><b>Segment Reporting:</b></h6>
+        <p>Provide detailed financial reports by business unit, product line, or geographical region to assess performance.</p>
+        <h6><b>Cost Analysis:</b></h6>
+        <p>Analyze costs to determine cost structures, profitability, and areas for cost reduction.</p>
+        <h6><b>Revenue Analysis:</b></h6>
+        <p>Evaluate revenue streams to understand sources of income and assess revenue growth and stability.</p>
+        <h6><b>Cash Flow Analysis:</b></h6>
+        <p>Review cash flow statements to assess liquidity, cash generation, and usage of cash in operations, investing, and financing.</p>
+        <h6><b>Compliance and Regulatory Reporting:</b></h6>
+        <p>Ensure financial reports meet regulatory requirements and standards such as GAAP or IFRS.</p>
+        <h6><b>Management Reporting:</b></h6>
+        <p>Prepare and present financial reports and insights to management for strategic decision-making and performance evaluation.</p>
+
+        <!-- Transaction Logging -->
+        <h2><b>Transaction Logging</b></h2>
+        <h6><b>Sales Transactions:</b></h6>
+        <p>Records of all revenue-generating sales and services provided.</p>
+        <h6><b>Purchase Transactions:</b></h6>
+        <p>Documentation of all business-related purchases and acquisitions.</p>
+        <h6><b>Payment Entries:</b></h6>
+        <p>Details of outgoing payments, including bills and other expenses.</p>
+        <h6><b>Receipt Entries:</b></h6>
+        <p>Records of incoming funds, such as payments from customers and other sources.
+        </p>
+        <h6><b>Adjustment Entries:</b></h6>
+        <p>Adjustments or corrections made to previous transactions to ensure accuracy.</p>
+
+             </div>
 
       </div>
 

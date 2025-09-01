@@ -1,7 +1,4 @@
 {
-    "scripts": {
-        "build": "mkdir -p www && rsync -av --exclude='www' ./ ./www"
-    },
     "dependencies": {
         "@capacitor/core": "^7.4.3"
     },

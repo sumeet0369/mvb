@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Adventure, Tours, Travel">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>ericaus.com</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favIcon1.png" type="image/png">
+    <!--====== Google Fonts ======-->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!--====== Flaticon css ======-->
+    <link rel="stylesheet" href="assets/fonts/flaticon/flaticon_gowilds.css">
+    <!--====== FontAwesome css ======-->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!--====== magnific-popup css ======-->
+    <link rel="stylesheet" href="assets/vendor/magnific-popup/dist/magnific-popup.css">
+    <!--====== Slick-popup css ======-->
+    <link rel="stylesheet" href="assets/vendor/slick/slick.css">
+    <!--====== Jquery UI css ======-->
+    <link rel="stylesheet" href="assets/vendor/jquery-ui/jquery-ui.min.css">
+    <!--====== Nice Select css ======-->
+    <link rel="stylesheet" href="assets/vendor/nice-select/css/nice-select.css">
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="assets/vendor/animate.css">
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .single-service {
+            padding: 20px;
+            border-left: 4px solid #0d6efd;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .single-service h4 {
+            font-size: 20px;
+            color: #0d6efd;
+            margin-bottom: 10px;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+        .floating_btn {
+            position: fixed;
+            bottom: 80px;
+            right: 25px;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        @keyframes pulsing {
+            to {
+                box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+            }
+        }
+
+        .contact_icon {
+            background-color: #42db87;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 2px 2px 3px #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translatey(0px);
+            animation: pulse 1.5s infinite;
+            box-shadow: 0 0 0 0 #42db87;
+            -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+            -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+            -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+            animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+            font-weight: normal;
+            font-family: sans-serif;
+            text-decoration: none !important;
+            transition: all 300ms ease-in-out;
+        }
+
+
+        .text_icon {
+            margin-top: 8px;
+            color: #707070;
+            font-size: 13px;
+        }
+
+        .banner-img {
+            position: absolute;
+            top: -20px;
+            left: 0;
+            width: 100%;
+            height: 115%;
+            /* object-fit: cover; */
+            /* Maintain aspect ratio, cover entire section */
+            z-index: -1;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .page-banner {
+                height: 300px;
+                /* Reduce banner height for mobile */
+            }
+
+            .banner-img {
+                /* object-fit: cover; */
+                height: 100%;
+                width: 100%;
+                top: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-banner {
+                height: 250px;
+                /* Even smaller height for small phones */
+            }
+        }
+
+
+        .single-service {
+            padding: 25px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
+        }
+
+        .single-service h4 {
+            color: #0d6efd;
+            font-size: 1.75rem;
+            margin-bottom: 15px;
+        }
+
+        .accordion-button {
+            font-weight: 500;
+            color: #343a40;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #e9f2ff;
+            color: #0d6efd;
+        }
+
+        .accordion-body p {
+            margin-bottom: 15px;
+            color: #495057;
+            line-height: 1.5;
+        }
+
+        .accordion-body ul {
+            list-style: disc inside;
+        }
+
+        .accordion-body ul li {
+            margin-bottom: 10px;
+            color: #343a40;
+        }
+    </style>
+
+<body>
+    <!-- floating button -->
+    <div class="floating_btn">
+        <a target="_blank" href="https://wa.me/+19097405272">
+            <div class="contact_icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </a>
+        <p class="text_icon">Talk to us?</p>
+    </div>
+
+    <!-- end -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="pre-shadow"></div>
+            <div class="pre-box"></div>
+        </div>
+    </div><!--====== End Preloader ======-->
+    <!--====== Search From ======-->
+    <div class="modal fade search-modal" id="search-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form>
+                    <div class="form_group">
+                        <input type="search" class="form_control" placeholder="Search here" name="search">
+                        <label><i class="fa fa-search"></i></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!--====== Search From ======-->
+    <header class="header-area header-one transparent-header">
+        <!--====== Header Navigation ======-->
+        <div class="header-navigation navigation-white">
+            <div class="nav-overlay"></div>
+            <div class="container-fluid">
+                <div class="primary-menu">
+                    <!--====== Site Branding ======-->
+                    <div class="site-branding ">
+                        <a href="index.html" class="brand-logo"><img class="logo" src="assets/images/logo/logoNew.png"
+                                alt="Site Logo"></a>
+                    </div>
+                    <!--====== Nav Menu ======-->
+                    <div class="nav-menu">
+                        <!--====== Site Branding ======-->
+                        <div class="mobile-logo mb-30 d-block d-xl-none">
+                            <a href="index.html" class="brand-logo"><img src="assets/images/logo/logoNew.png"
+                                    alt="Site Logo"></a>
+                        </div>
+                        <!--=== Nav Search ===-->
+                        <div class="nav-search mb-30 d-block d-xl-none ">
+                            <form>
+                                <div class="form_group">
+                                    <input type="email" class="form_control" placeholder="Search Here" name="email"
+                                        required>
+                                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--====== main Menu ======-->
+                        <nav class="main-menu">
+                            <ul>
+                                <li class="menu-item has-children "><a href="index.html">Home</a>
+                                    <!-- <ul class="sub-menu">
+                                            <li><a href="index.html">Home 01</a></li>
+                                            <li><a href="index-2.html">Home 02</a></li>
+                                            <li><a href="index-3.html">Home 03</a></li>
+                                            <li><a href="index-4.html">Home 04</a></li>
+                                        </ul> -->
+                                </li>
+                                <li class="menu-item has-children"><a class="activebtn" href="whatWeDo.html">What We
+                                        Do</a>
+
+                                </li>
+                                <!-- <li class="menu-item has-children"><a href="index.html">Erica Pricing</a> -->
+
+                                <!-- </li> -->
+                                <!-- <li class="menu-item has-children"><a href="#">Holiday Packeges </a>
+                                        < <ul class="sub-menu">
+                                            <li><a href="blog-list.html">Blog List</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul> -->
+                                <!-- </li>  -->
+                                <li class="menu-item has-children"><a href="about.html">About Us</a>
+                                    <!-- <ul class="sub-menu">
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="gallery.html">Our Gallery</a></li>
+                                            <li><a href="events.html">Our Events</a></li>
+                                            <li><a href="shop.html">Our Shop</a></li>
+                                            <li><a href="product-details.html">Product Details</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul> -->
+                                </li>
+                                <li class="menu-item has-children"><a href="contact.html">Contact Us </a>
+                                    <!-- <ul class="sub-menu">
+                                            <li><a href="blog-list.html">Blog List</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul> -->
+                                </li>
+                                <!-- <li class="menu-item search-item">
+                                        <div class="search-btn" data-bs-toggle="modal" data-bs-target="#search-modal"><i class="far fa-search"></i></div>
+                                    </li> -->
+                            </ul>
+                        </nav>
+                        <!--====== Menu Button ======-->
+                        <div class="menu-button mt-10 d-xl-none">
+                            <a href="contact.html" class="main-btn secondary-btn">Reach Out<i
+                                    class="fas fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                    <!--====== Nav Right Item ======-->
+                    <div class="nav-right-item">
+                        <div class="menu-button d-xl-block d-none">
+                            <a href="contact.html" class="main-btn primary-btn">Reach Out<i
+                                    class="fas fa-paper-plane"></i></a>
+                        </div>
+                        <div class="navbar-toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!--====== End Area ======-->
+    <!--====== Start Breadcrumb Section ======-->
+    <section class="page-banner overlay pt-170 pb-170" style="
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 550px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+">
+
+        <img src="assets/images/whatWeDo/whatWeDo.png" alt="Banner Image" class="banner-img">
+
+        <!-- Optional content -->
+        <!--
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-lg-10">
+              <div class="page-banner-content text-center text-white">
+                  <h1 class="page-title">Ranthambhore Tiger Reserve</h1>
+                  <ul class="breadcrumb-link text-white">
+                      <li class="active" style="text-decoration: none;">Sawai Madhpur, Raj. - INDIA</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  -->
+
+    </section>
+    <!--====== Start Destination Details Section ======-->
+    <section class="destination-details-section pt-20 pb-50">
+        <div class="container">
+            <div class="destination-details-wrapper">
+                <div class="destination-info wow fadeInUp">
+                    <h3 class="title">Erica Services: Innovation at Your Fingertips</h3>
+                    <div class="meta">
+                        <!-- <span class="location"><i class="fas fa-map-marker-alt"></i>Sawai Madhopur, Rajasthan,
+                            India</span> -->
+                        <ul class="ratings">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><a href="#">(4.9)</a></li>
+                        </ul>
+                    </div>
+                    <p>
+                        Our professionals at Erica are all team of experts. We understand value of commitment and timely
+                        quality deliverables. We know, how important it is for any organization be it as small as a
+                        grocery store or as big as Multi-million dollar timely update of accounting records or filling
+                        tax returns well on time or delivering audit result to stakeholders, we respect our work and
+                        your time. We believe our team and our timely delivery of work, so first in Industry we offer
+                        100% moneyback* if we fail to deliver our commitment as per our contract. We welcome you and
+                        experience Erica for all your Financial services.</p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="assets/images/whatWeDo/accounting.jpeg" class="rounded mb-40" alt="Features Image"
+                                style="height: 400px;">
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="assets/images/whatWeDo/image2.jpeg" class="rounded mb-40" alt="Features Image"
+                                style="height: 400px;">
+                        </div>
+                    </div>
+                    <h3>Why Erica Is the Smart Choice</h3>
+                    <p>At Erica, we pride ourselves on being more than just service providers — we're your committed
+                        financial partners. Our team is made up of seasoned professionals who bring deep expertise and
+                        unwavering dedication to every project. We understand that whether you're a small local business
+                        or a multi-million dollar enterprise, timely and accurate financial services are critical. From
+                        bookkeeping and tax filings to audit reports and compliance updates, we deliver with precision
+                        and punctuality. What truly sets Erica apart is our industry-first 100% money-back guarantee —
+                        if we fail to meet our contractual commitments, you don’t pay. That’s how confident we are in
+                        our people and our process. We value your time as much as we value our work, and our results
+                        speak for themselves. Choose Erica for dependable, transparent, and professional financial
+                        solutions — and experience the difference commitment makes.</p>
+                    <ul class="features-list mb-40">
+                        <li><a href="#accounting"><span><i class="fas fa-badge-check"></i>Accounts & Book-keeping
+                                    Services</span></a></li>
+                        <li><a href="#taxation"><span><i class="fas fa-badge-check"></i>Taxation Services</span></a>
+                        </li>
+                        <li><a href="#payroll"><span><i class="fas fa-badge-check"></i>Payroll Management</span></a>
+                        </li>
+                        <li><a href="#inventory"><span><i class="fas fa-badge-check"></i>Inventory Management</span></a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <div class="service-details">
+
+                    <div id="accounting" class="single-service mb-60">
+                        <h4 class="mb-4">Accounts & Book-keeping Services</h4>
+                        <p>Accurate and timely bookkeeping forms the backbone of financial health. At Erica, we go
+                            beyond mere data entry: our bookkeeping services deliver insights, clarity, and confidence,
+                            helping you make strategic financial decisions backed by precise and up-to-date records.</p>
+
+                        <div class="accordion" id="accountingAccordion">
+
+                            <!-- Chart of Accounts -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="chartAccountsHeading">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#chartAccountsCollapse" aria-expanded="true"
+                                        aria-controls="chartAccountsCollapse">
+                                        <i class="fas fa-list-alt me-2"></i> Chart of Accounts
+                                    </button>
+                                </h2>
+                                <div id="chartAccountsCollapse" class="accordion-collapse collapse show"
+                                    aria-labelledby="chartAccountsHeading" data-bs-parent="#accountingAccordion">
+                                    <div class="accordion-body">
+                                        <p>Our Chart of Accounts service is designed to structure your financial system
+                                            in a way that maximizes clarity and management control. We segment and
+                                            classify your assets, liabilities, equity, revenues, and expenses so that
+                                            financial reporting becomes intuitive and actionable.</p>
+                                        <ul class="mt-3">
+                                            <li><strong>Comprehensive Asset Tracking:</strong> We maintain detailed
+                                                accounts for all physical and intangible assets, giving you full
+                                                visibility into your resource base and its value over time.</li>
+                                            <li><strong>Accurate Revenue Classification:</strong> Each revenue stream is
+                                                clearly categorized, enabling you to identify growth areas and make
+                                                data-driven sales strategies.</li>
+                                            <li><strong>Precise Expense Management:</strong> With detailed expense
+                                                accounts, you’ll see exactly where money goes—facilitating better
+                                                budgeting, cost control, and waste reduction.</li>
+                                            <li><strong>Effective Liability Monitoring:</strong> Our system keeps
+                                                liabilities clearly tracked so you can anticipate payments, avoid
+                                                defaults, and maintain healthy cash flow.</li>
+                                            <li><strong>Clear Equity Representation:</strong> We ensure your equity
+                                                accounts—like owners’ contributions and retained earnings—reflect your
+                                                business’s true financial health.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Accounting Services -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="accountingServicesHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#accountingServicesCollapse" aria-expanded="false"
+                                        aria-controls="accountingServicesCollapse">
+                                        <i class="fas fa-file-invoice-dollar me-2"></i> Accounting Services
+                                    </button>
+                                </h2>
+                                <div id="accountingServicesCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="accountingServicesHeading" data-bs-parent="#accountingAccordion">
+                                    <div class="accordion-body">
+                                        <p>We offer a broad spectrum of accounting services suited to your business
+                                            needs—whether you require statutory financial reports, internal performance
+                                            metrics, cost control insight, tax compliance, or specialized handling of
+                                            not-for-profit finances. Our team ensures accuracy, compliance, and insight.
+                                        </p>
+                                        <ul class="mt-3">
+                                            <li><strong>Financial Accounting:</strong> We prepare external-facing
+                                                financial statements—balance sheet, income statement, and cash flow—to
+                                                reflect your company’s overall financial position accurately.</li>
+                                            <li><strong>Managerial Accounting:</strong> Internal reports, dashboards,
+                                                and cost centers help you understand operations, spot inefficiencies,
+                                                and steer strategy from monthly insights.</li>
+                                            <li><strong>Cost Accounting:</strong> We break down your production or
+                                                service costs by unit and activity, identifying areas where costs can be
+                                                reduced or margins improved.</li>
+                                            <li><strong>Tax Accounting:</strong> We handle tax planning, computation,
+                                                filings, and compliance, tailoring our approach to your business
+                                                structure to minimize liability within the law.</li>
+                                            <li><strong>Nonprofit Accounting:</strong> For NGOs and nonprofits, we
+                                                manage grant funds, restricted vs unrestricted accounting, donor
+                                                reporting, and regulatory compliance.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Accounts Receivable Management -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="arHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#arCollapse" aria-expanded="false" aria-controls="arCollapse">
+                                        <i class="fas fa-receipt me-2"></i> Accounts Receivable (AR) Process Management
+                                    </button>
+                                </h2>
+                                <div id="arCollapse" class="accordion-collapse collapse" aria-labelledby="arHeading"
+                                    data-bs-parent="#accountingAccordion">
+                                    <div class="accordion-body">
+                                        <p>Efficient receivables management ensures you get paid faster and avoids cash
+                                            flow bottlenecks. We streamline every step—from invoicing to
+                                            collections—while reducing bad debts and maintaining strong customer
+                                            relationships.</p>
+                                        <ul class="mt-3">
+                                            <li><strong>Invoice Generation & Delivery:</strong> We help craft precise
+                                                invoices and deliver them through suitable channels (email, print,
+                                                portals) in a timely manner.</li>
+                                            <li><strong>Payment Collection & Application:</strong> We follow up on
+                                                payments, allocate them correctly to invoices, and ensure customer
+                                                balances are updated instantly.</li>
+                                            <li><strong>Accounts Tracking & Credit Control:</strong> Ongoing monitoring
+                                                of aged receivables, credit limits, and customer payment patterns to
+                                                reduce risk.</li>
+                                            <li><strong>Collections Follow-Up & Reporting:</strong> Our team issues
+                                                reminders, negotiates where needed, and escalates collection while
+                                                maintaining professional relations.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Invoice to Cash -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="invoiceCashHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#invoiceCashCollapse" aria-expanded="false"
+                                        aria-controls="invoiceCashCollapse">
+                                        <i class="fas fa-file-invoice me-2"></i> Invoice to Cash Management
+                                    </button>
+                                </h2>
+                                <div id="invoiceCashCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="invoiceCashHeading" data-bs-parent="#accountingAccordion">
+                                    <div class="accordion-body">
+                                        <p>The Invoice to Cash (I2C) cycle encompasses all steps from receiving invoices
+                                            to processing payments and reconciling accounts. We take care of each
+                                            touchpoint, ensuring accuracy, timeliness, and control.</p>
+                                        <ul class="mt-3">
+                                            <li><strong>Invoice Receipt, Logging & Matching:</strong> We record incoming
+                                                vendor invoices, compare with purchase orders, and spot mismatches
+                                                before payments go out.</li>
+                                            <li><strong>Approval Workflow & Scheduling:</strong> We route invoices
+                                                through audit and approval steps, then schedule payments based on terms
+                                                and cash availability.</li>
+                                            <li><strong>Payment Processing & Reconciliation:</strong> We disburse
+                                                payments via preferred methods and reconcile bank and vendor statements
+                                                to ensure zero discrepancies.</li>
+                                            <li><strong>Vendor Management & Compliance:</strong> We maintain accurate
+                                                vendor records, resolve queries, and ensure payments comply with
+                                                contracts and policies.</li>
+                                            <li><strong>Expense Tracking:</strong> We categorize and monitor each
+                                                expense against budgets, ensuring alignment with forecasts and
+                                                controlling cost overruns.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Budgeting & Forecasting -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="budgetingHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#budgetingCollapse" aria-expanded="false"
+                                        aria-controls="budgetingCollapse">
+                                        <i class="fas fa-chart-line me-2"></i> Budgeting & Forecasting
+                                    </button>
+                                </h2>
+                                <div id="budgetingCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="budgetingHeading" data-bs-parent="#accountingAccordion">
+                                    <div class="accordion-body">
+                                        <p>Budgeting and forecasting help you stay ahead of financial challenges. We
+                                            work with your team to set targets, simulate scenarios, and monitor
+                                            performance to guide smart investment decisions.</p>
+                                        <ul class="mt-3">
+                                            <li><strong>Budget Preparation, Approval & Variance Analysis:</strong> We
+                                                build realistic budgets, assist in stakeholder review, and monitor
+                                                deviations to drive corrective action.</li>
+                                            <li><strong>Revenue Projections & Expense Planning:</strong> We forecast
+                                                potential income streams and allocate costs prudently based on market
+                                                trends and historical data.</li>
+                                            <li><strong>Financial Modeling & Scenario Planning:</strong> We create
+                                                “what-if” models to simulate best-case, worst-case, and middle-ground
+                                                outcomes—helping you anticipate risks and plan mitigations.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Financial Reporting -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="reportingHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#reportingCollapse" aria-expanded="false"
+                                        aria-controls="reportingCollapse">
+                                        <i class="fas fa-chart-pie me-2"></i> Financial Reporting & Analysis
+                                    </button>
+                                </h2>
+                                <div id="reportingCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="reportingHeading" data-bs-parent="#accountingAccordion">
+                                    <div class="accordion-body">
+                                        <p>Good reporting turns numbers into actionable insights. We go beyond
+                                            generating statements—we analyze trends, ratios, segments, and cash flows to
+                                            help your management team make informed strategic decisions.</p>
+                                        <ul class="mt-3">
+                                            <li><strong>Preparation of Key Financial Statements:</strong> Income
+                                                statements, balance sheets, and cash flow statements are prepared in
+                                                conformity with applicable accounting standards.</li>
+                                            <li><strong>Variance, Trend & Ratio Analysis:</strong> We compare actuals to
+                                                budgets, assess financial trends, and compute ratios like liquidity,
+                                                profitability, and solvency.</li>
+                                            <li><strong>Segment, Revenue & Cost Analysis:</strong> We drill down on
+                                                business units, product lines, or regions to pinpoint performance
+                                                drivers or laggards.</li>
+                                            <li><strong>Cash Flow & Compliance Reporting:</strong> We examine cash
+                                                inflows/outflows, ensure regulatory compliance (e.g. GAAP or IFRS), and
+                                                support audit readiness.</li>
+                                            <li><strong>Internal Management Reporting:</strong> Tailored reports and
+                                                dashboards, with clear commentary, to help leadership steer operations
+                                                and investments.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Transaction Logging -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="transactionsHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#transactionsCollapse" aria-expanded="false"
+                                        aria-controls="transactionsCollapse">
+                                        <i class="fas fa-file-alt me-2"></i> Transaction Logging
+                                    </button>
+                                </h2>
+                                <div id="transactionsCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="transactionsHeading" data-bs-parent="#accountingAccordion">
+                                    <div class="accordion-body">
+                                        <p>Transaction logging is the granular record of every financial movement in
+                                            your business—sales, purchases, adjustments, and refunds. Our meticulous
+                                            approach ensures full traceability, audit readiness, and data integrity.</p>
+                                        <ul class="mt-3">
+                                            <li><strong>Sales & Purchase Transactions:</strong> We record all sales and
+                                                purchase events, ensuring each is captured with accurate dates, amounts,
+                                                and account allocations.</li>
+                                            <li><strong>Payment & Receipt Entries:</strong> All inflows and outflows,
+                                                including customer payments and vendor disbursements, are logged
+                                                promptly and correctly.</li>
+                                            <li><strong>Adjustment & Correction Entries:</strong> Mistakes happen—our
+                                                process ensures adjustments or corrections are properly authorized,
+                                                documented, and reconciled to maintain integrity.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div id="taxation" class="single-service mb-60">
+                        <h4 class="mb-4">Taxation Services</h4>
+                        <p>Staying compliant while minimizing your tax liability requires more than just annual filings.
+                            Our comprehensive tax services support individuals and businesses with year-round tax
+                            planning, filing, audits, and strategic guidance — ensuring accuracy, compliance, and peace
+                            of mind.</p>
+
+                        <div class="accordion" id="taxAccordion">
+
+                            <!-- Tax Preparation -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="taxPrepHeading">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#taxPrepCollapse" aria-expanded="true"
+                                        aria-controls="taxPrepCollapse">
+                                        <i class="fas fa-file-invoice-dollar me-2"></i> Tax Preparation
+                                    </button>
+                                </h2>
+                                <div id="taxPrepCollapse" class="accordion-collapse collapse show"
+                                    aria-labelledby="taxPrepHeading" data-bs-parent="#taxAccordion">
+                                    <div class="accordion-body">
+                                        <p>We handle the preparation and filing of federal and state tax returns for
+                                            individuals, businesses, and nonprofits. Our team ensures accurate
+                                            reporting, timely submissions, and full compliance with tax laws to avoid
+                                            penalties and maximize benefits.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tax Planning -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="taxPlanningHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#taxPlanningCollapse" aria-expanded="false"
+                                        aria-controls="taxPlanningCollapse">
+                                        <i class="fas fa-lightbulb me-2"></i> Tax Planning
+                                    </button>
+                                </h2>
+                                <div id="taxPlanningCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="taxPlanningHeading" data-bs-parent="#taxAccordion">
+                                    <div class="accordion-body">
+                                        <p>We provide proactive tax planning strategies throughout the year to help you
+                                            reduce liabilities, leverage tax-saving opportunities, and align your
+                                            financial decisions with current tax laws. Planning ahead helps you avoid
+                                            surprises during tax season.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Document Assembly -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="docAssemblyHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#docAssemblyCollapse" aria-expanded="false"
+                                        aria-controls="docAssemblyCollapse">
+                                        <i class="fas fa-folder-open me-2"></i> Document Assembly
+                                    </button>
+                                </h2>
+                                <div id="docAssemblyCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="docAssemblyHeading" data-bs-parent="#taxAccordion">
+                                    <div class="accordion-body">
+                                        <p>We gather, organize, and review all necessary financial documents including
+                                            W-2s, 1099s, expense records, investment income, and other supporting
+                                            materials to ensure your tax return is complete and substantiated for
+                                            compliance and audit readiness.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Deductions and Credits -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="deductionsHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#deductionsCollapse" aria-expanded="false"
+                                        aria-controls="deductionsCollapse">
+                                        <i class="fas fa-percentage me-2"></i> Deductions and Credits
+                                    </button>
+                                </h2>
+                                <div id="deductionsCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="deductionsHeading" data-bs-parent="#taxAccordion">
+                                    <div class="accordion-body">
+                                        <p>We identify eligible deductions and tax credits such as education credits,
+                                            business expenses, home office deductions, and more—ensuring you maximize
+                                            tax savings and reduce your taxable income wherever possible under current
+                                            tax regulations.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Compliance Review -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="complianceHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#complianceCollapse" aria-expanded="false"
+                                        aria-controls="complianceCollapse">
+                                        <i class="fas fa-shield-alt me-2"></i> Compliance Review
+                                    </button>
+                                </h2>
+                                <div id="complianceCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="complianceHeading" data-bs-parent="#taxAccordion">
+                                    <div class="accordion-body">
+                                        <p>Our compliance reviews examine your tax filings against current federal and
+                                            state laws to ensure all documentation, calculations, and disclosures meet
+                                            statutory requirements. This reduces the risk of penalties, audits, or
+                                            future legal issues.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Filing Decisions -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="filingHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#filingCollapse" aria-expanded="false"
+                                        aria-controls="filingCollapse">
+                                        <i class="fas fa-file-upload me-2"></i> Filing Decisions
+                                    </button>
+                                </h2>
+                                <div id="filingCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="filingHeading" data-bs-parent="#taxAccordion">
+                                    <div class="accordion-body">
+                                        <p>We help you choose the best filing method—e-filing for faster processing and
+                                            confirmation, traditional paper filing when necessary, and assistance with
+                                            filing extensions when more time is required to prepare an accurate return.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Audit Care -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="auditHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#auditCollapse" aria-expanded="false"
+                                        aria-controls="auditCollapse">
+                                        <i class="fas fa-search-dollar me-2"></i> Audit Care
+                                    </button>
+                                </h2>
+                                <div id="auditCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="auditHeading" data-bs-parent="#taxAccordion">
+                                    <div class="accordion-body">
+                                        <p>If you’re facing an IRS or state audit, we provide complete audit support,
+                                            including documentation preparation, response drafting, and direct
+                                            representation during the audit process. Our goal is to protect your
+                                            interests and resolve issues efficiently.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Amendments and Corrections -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="amendmentsHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#amendmentsCollapse" aria-expanded="false"
+                                        aria-controls="amendmentsCollapse">
+                                        <i class="fas fa-eraser me-2"></i> Amendments and Corrections
+                                    </button>
+                                </h2>
+                                <div id="amendmentsCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="amendmentsHeading" data-bs-parent="#taxAccordion">
+                                    <div class="accordion-body">
+                                        <p>Filed a return with missing or incorrect information? We prepare and submit
+                                            amended tax returns to update your filings and minimize exposure to
+                                            penalties, audits, or interest on unpaid amounts due to previous errors or
+                                            omissions.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tax Liability Assessment -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="liabilityHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#liabilityCollapse" aria-expanded="false"
+                                        aria-controls="liabilityCollapse">
+                                        <i class="fas fa-calculator me-2"></i> Tax Liability Assessment
+                                    </button>
+                                </h2>
+                                <div id="liabilityCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="liabilityHeading" data-bs-parent="#taxAccordion">
+                                    <div class="accordion-body">
+                                        <p>We estimate your current and projected tax liabilities to help you plan ahead
+                                            and avoid underpayment penalties. This includes guidance on making accurate
+                                            quarterly estimated payments for both individuals and businesses.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Consultation and Intelligence -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="consultationHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#consultationCollapse" aria-expanded="false"
+                                        aria-controls="consultationCollapse">
+                                        <i class="fas fa-user-tie me-2"></i> Consultation and Intelligence
+                                    </button>
+                                </h2>
+                                <div id="consultationCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="consultationHeading" data-bs-parent="#taxAccordion">
+                                    <div class="accordion-body">
+                                        <p>We provide personalized tax advice tailored to your unique situation—whether
+                                            you're an individual, startup, or established business. Get answers to your
+                                            tax questions and strategic guidance to help you make smarter financial
+                                            decisions with tax implications in mind.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="payroll" class="single-service mb-60">
+                        <h4 class="mb-4">Payroll Management</h4>
+                        <p>Managing payroll accurately and on time is essential for employee satisfaction and legal
+                            compliance. Our end-to-end payroll services cover everything from time tracking to tax
+                            withholding, ensuring you remain compliant, transparent, and efficient in your payroll
+                            operations.</p>
+
+                        <div class="accordion" id="payrollAccordion">
+
+                            <!-- Timekeeping -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="timekeepingHeading">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#timekeepingCollapse" aria-expanded="true"
+                                        aria-controls="timekeepingCollapse">
+                                        <i class="fas fa-clock me-2"></i> Timekeeping
+                                    </button>
+                                </h2>
+                                <div id="timekeepingCollapse" class="accordion-collapse collapse show"
+                                    aria-labelledby="timekeepingHeading" data-bs-parent="#payrollAccordion">
+                                    <div class="accordion-body">
+                                        <p>We accurately track employee hours, attendance, paid time off, and leave
+                                            balances using modern timekeeping systems. This ensures that payroll is
+                                            based on actual work data, minimizing disputes and improving payroll
+                                            accuracy and workforce accountability.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Payroll Calculation -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="calcHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#calcCollapse" aria-expanded="false"
+                                        aria-controls="calcCollapse">
+                                        <i class="fas fa-calculator me-2"></i> Payroll Calculation
+                                    </button>
+                                </h2>
+                                <div id="calcCollapse" class="accordion-collapse collapse" aria-labelledby="calcHeading"
+                                    data-bs-parent="#payrollAccordion">
+                                    <div class="accordion-body">
+                                        <p>We calculate employee compensation including hourly wages, salaries,
+                                            overtime, commissions, and bonuses. All deductions like benefits, taxes, and
+                                            garnishments are accurately factored in to ensure each paycheck reflects the
+                                            correct take-home amount.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tax Withholding -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="taxWithholdingHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#taxWithholdingCollapse" aria-expanded="false"
+                                        aria-controls="taxWithholdingCollapse">
+                                        <i class="fas fa-percentage me-2"></i> Tax Withholding
+                                    </button>
+                                </h2>
+                                <div id="taxWithholdingCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="taxWithholdingHeading" data-bs-parent="#payrollAccordion">
+                                    <div class="accordion-body">
+                                        <p>We manage all mandatory tax withholdings, including federal income tax,
+                                            Social Security, Medicare, state, and local taxes. This includes regular
+                                            updates to tax tables and employee elections, ensuring compliance and
+                                            preventing under- or over-withholding.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Payroll Distribution -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="distributionHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#distributionCollapse" aria-expanded="false"
+                                        aria-controls="distributionCollapse">
+                                        <i class="fas fa-money-check-alt me-2"></i> Payroll Distribution
+                                    </button>
+                                </h2>
+                                <div id="distributionCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="distributionHeading" data-bs-parent="#payrollAccordion">
+                                    <div class="accordion-body">
+                                        <p>We handle secure and timely payment distribution via direct deposit, checks,
+                                            or digital wallets. Each pay cycle is managed with precision, and employees
+                                            receive detailed pay stubs outlining gross pay, deductions, and net pay.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Compliance and Reporting -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="compliancePayrollHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#compliancePayrollCollapse" aria-expanded="false"
+                                        aria-controls="compliancePayrollCollapse">
+                                        <i class="fas fa-file-alt me-2"></i> Compliance and Reporting
+                                    </button>
+                                </h2>
+                                <div id="compliancePayrollCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="compliancePayrollHeading" data-bs-parent="#payrollAccordion">
+                                    <div class="accordion-body">
+                                        <p>We ensure that your payroll practices comply with federal, state, and local
+                                            employment laws, including wage regulations, overtime rules, and
+                                            recordkeeping requirements. We also generate required reports for tax
+                                            filings and government audits.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Payroll Reconciliation -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="reconHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#reconCollapse" aria-expanded="false"
+                                        aria-controls="reconCollapse">
+                                        <i class="fas fa-balance-scale me-2"></i> Payroll Reconciliation
+                                    </button>
+                                </h2>
+                                <div id="reconCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="reconHeading" data-bs-parent="#payrollAccordion">
+                                    <div class="accordion-body">
+                                        <p>We reconcile payroll data with bank records and general ledger entries to
+                                            ensure all transactions are recorded accurately. This step is critical in
+                                            identifying discrepancies, maintaining financial integrity, and preparing
+                                            for audits or reporting needs.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div id="inventory" class="single-service mb-60">
+                        <h4 class="mb-4">Inventory Management</h4>
+                        <p>Efficient inventory management is crucial for ensuring optimal stock levels, reducing
+                            carrying costs, and maintaining smooth operations. Our inventory solutions streamline
+                            procurement, tracking, and valuation processes to help you make informed decisions and
+                            improve profitability.</p>
+
+                        <div class="accordion" id="inventoryAccordion">
+
+                            <!-- Inventory Planning -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="planningHeading">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#planningCollapse" aria-expanded="true"
+                                        aria-controls="planningCollapse">
+                                        <i class="fas fa-project-diagram me-2"></i> Inventory Planning
+                                    </button>
+                                </h2>
+                                <div id="planningCollapse" class="accordion-collapse collapse show"
+                                    aria-labelledby="planningHeading" data-bs-parent="#inventoryAccordion">
+                                    <div class="accordion-body">
+                                        <p>We develop inventory planning strategies by analyzing demand trends, sales
+                                            forecasts, and historical usage data. This ensures that you maintain optimal
+                                            stock levels—avoiding both overstocking and stockouts—while aligning your
+                                            supply chain with business goals.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Order Placement -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="orderPlacementHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#orderPlacementCollapse" aria-expanded="false"
+                                        aria-controls="orderPlacementCollapse">
+                                        <i class="fas fa-shopping-cart me-2"></i> Order Placement
+                                    </button>
+                                </h2>
+                                <div id="orderPlacementCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="orderPlacementHeading" data-bs-parent="#inventoryAccordion">
+                                    <div class="accordion-body">
+                                        <p>We help manage procurement by placing timely and cost-effective orders with
+                                            reliable suppliers. Purchase decisions are based on inventory forecasts,
+                                            reorder points, and supplier lead times to ensure smooth replenishment
+                                            without interrupting operations.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Receiving Goods -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="receivingHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#receivingCollapse" aria-expanded="false"
+                                        aria-controls="receivingCollapse">
+                                        <i class="fas fa-truck-loading me-2"></i> Receiving Goods
+                                    </button>
+                                </h2>
+                                <div id="receivingCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="receivingHeading" data-bs-parent="#inventoryAccordion">
+                                    <div class="accordion-body">
+                                        <p>We inspect and log received goods to ensure they match purchase orders in
+                                            quantity, quality, and specifications. Any discrepancies or damages are
+                                            reported and resolved promptly to maintain the integrity of your inventory
+                                            records.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Inventory Tracking -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="trackingHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#trackingCollapse" aria-expanded="false"
+                                        aria-controls="trackingCollapse">
+                                        <i class="fas fa-barcode me-2"></i> Inventory Tracking
+                                    </button>
+                                </h2>
+                                <div id="trackingCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="trackingHeading" data-bs-parent="#inventoryAccordion">
+                                    <div class="accordion-body">
+                                        <p>We utilize barcode systems, RFID, or inventory management software to track
+                                            real-time inventory levels and item movement. This ensures accurate stock
+                                            data across warehouses and enables quick response to changes in supply and
+                                            demand.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Inventory Valuation -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="valuationHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#valuationCollapse" aria-expanded="false"
+                                        aria-controls="valuationCollapse">
+                                        <i class="fas fa-balance-scale me-2"></i> Inventory Valuation
+                                    </button>
+                                </h2>
+                                <div id="valuationCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="valuationHeading" data-bs-parent="#inventoryAccordion">
+                                    <div class="accordion-body">
+                                        <p>We apply appropriate valuation methods such as FIFO (First In, First Out),
+                                            LIFO (Last In, First Out), or weighted average cost to assess your
+                                            inventory's financial value accurately. This supports proper financial
+                                            reporting and cost management.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Disposal Management -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="disposalHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#disposalCollapse" aria-expanded="false"
+                                        aria-controls="disposalCollapse">
+                                        <i class="fas fa-trash-alt me-2"></i> Disposal Management
+                                    </button>
+                                </h2>
+                                <div id="disposalCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="disposalHeading" data-bs-parent="#inventoryAccordion">
+                                    <div class="accordion-body">
+                                        <p>We manage the proper handling and documentation of obsolete, expired, or
+                                            damaged inventory items. Disposal or write-off procedures are done in
+                                            compliance with accounting standards and internal policies to minimize
+                                            losses and maintain accurate records.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="gallery-area wow fadeInUp">
+                    <div class="slider-active-3-item">
+                        <!--=== Single Gallery Item ===-->
+                        <div class="single-gallery-item mb-30">
+                            <div class="gallery-img">
+                                <img src="assets/images/whatWeDo/gallery1.png" alt="Gallery Image"
+                                    style="height: 300px;">
+                                <!-- <div class="hover-overlay">
+                                    <a href="assets/images/place/safari3.png" class="icon-btn img-popup"><i
+                                            class="far fa-plus"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <!--=== Single Gallery Item ===-->
+                        <div class="single-gallery-item mb-30">
+                            <div class="gallery-img">
+                                <img src="assets/images/whatWeDo/gallery2.png" alt="Gallery Image"
+                                    style="height: 300px;">
+                                <!-- <div class="hover-overlay">
+                                    <a href="assets/images/gallery/amazing-bengal-tiger-nature.jpg"
+                                        class="icon-btn img-popup"><i class="far fa-plus"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <!--=== Single Gallery Item ===-->
+                        <div class="single-gallery-item mb-30">
+                            <div class="gallery-img">
+                                <img src="assets/images/whatWeDo/gallery3.png" alt="Gallery Image"
+                                    style="height: 300px;">
+                                <!-- <div class="hover-overlay">
+                                    <a href="assets/images/gallery/leopard-laying-tree-while-looking-down-camera.jpg"
+                                        class="icon-btn img-popup"><i class="far fa-plus"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--====== End Destination Details Section ======-->
+
+
+
+    <!--             
+            <div style="height: 100%;">
+                <div class="card bg-dark text-white">
+                    <img src="./assets/images/gallery/wnbh_zu92_211015.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+            </div> -->
+    </div>
+
+    <!--====== Start Places Section ======-->
+    <!-- <section class="places-seciton pt-95 pb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center mb-45 wow fadeInDown">
+                        <h2>Popular Safaris</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-active-3-item-dot wow fadeInUp">
+                <div class="single-place-item mb-60">
+                    <div class="place-img">
+                        <img src="assets/images/gallery/wildlifesafariImg.avif" alt="Place Image"
+                            style="height: 250px;">
+                    </div>
+                    <div class="place-content">
+                        <div class="info">
+                            <ul class="ratings">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><a href="#">(4.9)</a></li>
+                            </ul>
+                            <h4 class="title"><a href="contact.html">Jeep Safari</a></h4>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i>Ranthambore National Park</p>
+                            <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency"></span> 4000
+                            </p>
+                            <div class="meta">
+                                <span><i class="far fa-user"></i>2</span>
+                                <span><a href="contact.html">Details<i class="far fa-long-arrow-right"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="single-place-item mb-60">
+                    <div class="place-img">
+                        <img src="assets/images/gallery/Canter_safari.jpg" alt="Place Image" style="height: 250px;">
+                    </div>
+                    <div class="place-content">
+                        <div class="info">
+                            <ul class="ratings">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><a href="#">(4.9)</a></li>
+                            </ul>
+                            <h4 class="title"><a href="contact.html">Canter Safari</a></h4>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i>Ranthambore National Park</p>
+                            <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency"></span> 3000
+                            </p>
+                            <div class="meta">
+                                
+                                <span><i class="far fa-user"></i>2</span>
+                                <span><a href="contact.html">Details<i class="far fa-long-arrow-right"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="single-place-item mb-60">
+                    <div class="place-img">
+                        <img src="assets/images/gallery/birdWatching.jpg" alt="Place Image" style="height: 250px;">
+                    </div>
+                    <div class="place-content">
+                        <div class="info">
+                            <ul class="ratings">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><a href="#">(4.9)</a></li>
+                            </ul>
+                            <h4 class="title"><a href="contact.html">Bird Watching</a></h4>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i>Ranthambore National Park</p>
+                            <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency">$</span> 800
+                            </p>
+                            <div class="meta">
+                                
+                                <span><i class="far fa-user"></i>2</span>
+                                <span><a href="contact.html">Details<i class="far fa-long-arrow-right"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="single-place-item mb-60">
+                    <div class="place-img">
+                        <img src="assets/images/gallery/National-Gharial-Sanctuary.jpg" alt="Place Image"
+                            style="height: 250px;">
+                    </div>
+                    <div class="place-content">
+                        <div class="info">
+                            <ul class="ratings">
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><a href="#">(4.9)</a></li>
+                            </ul>
+                            <h6 class="title"><a href="contact.html">Chambal Gharial Sanctuary</a></h6>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i>Ranthambore National Park</p>
+                            <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency"></span> 2600
+                            </p>
+                            <div class="meta">
+                               
+                                <span><i class="far fa-user"></i>2</span>
+                                <span><a href="contact.html">Details<i class="far fa-long-arrow-right"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!--====== Start Footer ======-->
+    <footer class="main-footer black-bg pt-50">
+        <div class="container">
+            <!--=== Footer Top ===-->
+            <div class="footer-top pt-40 wow fadeInUp">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <!--=== Single Info Item ===-->
+                        <div class="single-info-item mb-40">
+                            <div class="icon">
+                                <i class="far fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info">
+                                <span class="title">Location</span>
+                                <p>10375, Church St. Rancho Cucamonga, California, 91730, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!--=== Single Info Item ===-->
+                        <div class="single-info-item mb-40">
+                            <div class="icon">
+                                <i class="far fa-envelope-open"></i>
+                            </div>
+                            <div class="info">
+                                <span class="title">Email</span>
+                                <p><a href="mailto:ranthombore.online@gmail.com">info@ericaus.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!--=== Single Info Item ===-->
+                        <div class="single-info-item mb-40">
+                            <div class="icon">
+                                <i class="far fa-phone-volume"></i>
+                            </div>
+                            <div class="info">
+                                <span class="title">Phone</span>
+                                <p><a href="tel:+19097405272">+1-909 740 5272</a><br><a href="tel:+19098708718">+1-909-870-8718</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!--=== Social Box ===-->
+                        <div class="social-box mb-40 float-lg-end">
+                            <!-- <ul class="social-link">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=== Footer Widget ===-->
+            <div class="footer-widget-area pt-75 pb-30">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <!--=== Footer Widget ===-->
+                        <div class="footer-widget about-company-widget mb-40 wow fadeInUp">
+                            <h4 class="widget-title">About</h4>
+                            <div class="footer-content">
+                                <p>We are a forward-thinking global service provider entity specialized in Financial
+                                    and other services. We are empowering businesses with expert support, AI tools
+                                    and cost-effective solutions.</p>
+                                <a href="#" class="footer-logo"><img src="assets/images/logo/logoNew.png" alt="Site Logo"
+                                        height="150"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <!--=== Footer Widget ===-->
+                        <div class="footer-widget service-nav-widget mb-40 pl-lg-70 wow fadeInDown">
+                            <h4 class="widget-title">Services</h4>
+                            <div class="footer-content">
+                                <ul class="footer-widget-nav">
+                                    <li><a href="#">Accounts & Book-keeping</a></li>
+                                    <li><a href="#">Financial Reporting & Analysis</a></li>
+                                    <li><a href="#">Budgeting & Forecasting</a></li>
+                                    <li><a href="#">Inventory Management</a></li>
+                                    <li><a href="#">Payroll Management</a></li>
+                                </ul>
+                                <ul class="footer-widget-nav">
+                                    <li><a href="#">Tax Services</a></li>
+                                    <li><a href="#">Transaction Logging</a></li>
+                                    <li><a href="#">Accounts Receivable</a></li>
+                                    <li><a href="#">Invoice to Cash Process</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <!--=== Footer Widget ===-->
+                        <div class="footer-widget footer-newsletter-widget mb-40 pl-lg-100 wow fadeInUp">
+                            <h4 class="widget-title">Newsletter</h4>
+                            <div class="footer-content">
+                                <p>Stay informed with the latest updates on tax regulations, financial tips, and
+                                    business insights delivered straight to your inbox.</p>
+                                <form>
+                                    <div class="form_group">
+                                        <label><i class="far fa-paper-plane"></i></label>
+                                        <input type="email" class="form_control" placeholder="Enter your email address"
+                                            name="email" required>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--=== Footer Copyright ===-->
+            <div class="footer-copyright">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!--=== Footer Text ===-->
+                        <div class="footer-text">
+                            <p>&copy; 2025 <span style="color: #F7921E;">ericaus.com</span>, All Rights Reserved.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <!--=== Footer Nav ===-->
+                        <div class="footer-nav float-lg-end">
+                            <ul>
+                                <li><a href="contact.html">Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--====== Back To Top  ======-->
+    <a href="#" class="back-to-top"><i class="far fa-angle-up"></i></a>
+    <!--====== Jquery js ======-->
+    <script src="assets/vendor/jquery-3.6.0.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/vendor/popper/popper.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--====== Slick js ======-->
+    <script src="assets/vendor/slick/slick.min.js"></script>
+    <!--====== Magnific js ======-->
+    <script src="assets/vendor/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <!--====== Isotope js ======-->
+    <script src="assets/vendor/isotope.min.js"></script>
+    <!--====== Imagesloaded js ======-->
+    <script src="assets/vendor/imagesloaded.min.js"></script>
+    <!--====== Counterup js ======-->
+    <script src="assets/vendor/jquery.counterup.min.js"></script>
+    <!--====== Waypoints js ======-->
+    <script src="assets/vendor/jquery.waypoints.js"></script>
+    <!--====== Nice-select js ======-->
+    <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+    <!--====== jquery UI js ======-->
+    <script src="assets/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <!--====== WOW js ======-->
+    <script src="assets/vendor/wow.min.js"></script>
+    <!--====== Main js ======-->
+    <script src="assets/js/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

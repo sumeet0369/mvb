@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Adventure, Tours, Travel">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>ericaus.com</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon1.png" type="image/png">
+    <!--====== Google Fonts ======-->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!--====== Flaticon css ======-->
+    <link rel="stylesheet" href="assets/fonts/flaticon/flaticon_gowilds.css">
+    <!--====== FontAwesome css ======-->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!--====== magnific-popup css ======-->
+    <link rel="stylesheet" href="assets/vendor/magnific-popup/dist/magnific-popup.css">
+    <!--====== Slick-popup css ======-->
+    <link rel="stylesheet" href="assets/vendor/slick/slick.css">
+    <!--====== Jquery UI css ======-->
+    <link rel="stylesheet" href="assets/vendor/jquery-ui/jquery-ui.min.css">
+    <!--====== Nice Select css ======-->
+    <link rel="stylesheet" href="assets/vendor/nice-select/css/nice-select.css">
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="assets/vendor/animate.css">
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .floating_btn {
+            position: fixed;
+            bottom: 80px;
+            right: 25px;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        @keyframes pulsing {
+            to {
+                box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+            }
+        }
+
+        .contact_icon {
+            background-color: #42db87;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 2px 2px 3px #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translatey(0px);
+            animation: pulse 1.5s infinite;
+            box-shadow: 0 0 0 0 #42db87;
+            -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+            -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+            -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+            animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+            font-weight: normal;
+            font-family: sans-serif;
+            text-decoration: none !important;
+            transition: all 300ms ease-in-out;
+        }
+
+
+        .text_icon {
+            margin-top: 8px;
+            color: #707070;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- floating button -->
+    <div class="floating_btn">
+        <a target="_blank" href="https://wa.me/+19097405272">
+            <div class="contact_icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </a>
+        <p class="text_icon">Talk to us?</p>
+    </div>
+
+    <!-- end -->
+    <!--====== Start Preloader ======-->
+    <div class="preloader">
+        <div class="loader">
+            <div class="pre-shadow"></div>
+            <div class="pre-box"></div>
+        </div>
+    </div><!--====== End Preloader ======-->
+    <!--====== Search From ======-->
+    <div class="modal fade search-modal" id="search-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form>
+                    <div class="form_group">
+                        <input type="search" class="form_control" placeholder="Search here" name="search">
+                        <label><i class="fa fa-search"></i></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!--====== Search From ======-->
+    <!--====== Start Header ======-->
+    <header class="header-area header-one transparent-header">
+        <!--====== Header Navigation ======-->
+        <div class="header-navigation navigation-white">
+            <div class="nav-overlay"></div>
+            <div class="container-fluid">
+                <div class="primary-menu">
+                    <!--====== Site Branding ======-->
+                    <div class="site-branding ">
+                        <a href="index.html" class="brand-logo"><img class="logo" src="assets/images/logo/logoNew.png"
+                                alt="Site Logo"></a>
+                    </div>
+                    <!--====== Nav Menu ======-->
+                    <div class="nav-menu">
+                        <!--====== Site Branding ======-->
+                        <div class="mobile-logo mb-30 d-block d-xl-none">
+                            <a href="index.html" class="brand-logo"><img src="assets/images/logo/logoNew.png"
+                                    alt="Site Logo"></a>
+                        </div>
+                        <!--=== Nav Search ===-->
+                        <div class="nav-search mb-30 d-block d-xl-none ">
+                            <form>
+                                <div class="form_group">
+                                    <input type="email" class="form_control" placeholder="Search Here" name="email"
+                                        required>
+                                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--====== main Menu ======-->
+                        <nav class="main-menu">
+                            <ul>
+                                <li class="menu-item has-children "><a href="index.html">Home</a>
+                                    <!-- <ul class="sub-menu">
+                                            <li><a href="index.html">Home 01</a></li>
+                                            <li><a href="index-2.html">Home 02</a></li>
+                                            <li><a href="index-3.html">Home 03</a></li>
+                                            <li><a href="index-4.html">Home 04</a></li>
+                                        </ul> -->
+                                </li>
+                                <li class="menu-item has-children"><a href="whatWeDo.html">What We Do</a>
+
+                                </li>
+                                <!-- <li class="menu-item has-children"><a href="index.html">Erica Pricing</a> -->
+
+                                <!-- </li> -->
+                                <!-- <li class="menu-item has-children"><a href="#">Holiday Packeges </a>
+                                        < <ul class="sub-menu">
+                                            <li><a href="blog-list.html">Blog List</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul> -->
+                                <!-- </li>  -->
+                                <li class="menu-item has-children"><a class="activebtn" href="about.html">About Us</a>
+                                    <!-- <ul class="sub-menu">
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="gallery.html">Our Gallery</a></li>
+                                            <li><a href="events.html">Our Events</a></li>
+                                            <li><a href="shop.html">Our Shop</a></li>
+                                            <li><a href="product-details.html">Product Details</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul> -->
+                                </li>
+                                <li class="menu-item has-children"><a href="contact.html">Contact Us </a>
+                                    <!-- <ul class="sub-menu">
+                                            <li><a href="blog-list.html">Blog List</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul> -->
+                                </li>
+                                <!-- <li class="menu-item search-item">
+                                        <div class="search-btn" data-bs-toggle="modal" data-bs-target="#search-modal"><i class="far fa-search"></i></div>
+                                    </li> -->
+                            </ul>
+                        </nav>
+                        <!--====== Menu Button ======-->
+                        <div class="menu-button mt-10 d-xl-none">
+                            <a href="contact.html" class="main-btn secondary-btn">Reach Out<i
+                                    class="fas fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                    <!--====== Nav Right Item ======-->
+                    <div class="nav-right-item">
+                        <div class="menu-button d-xl-block d-none">
+                            <a href="contact.html" class="main-btn primary-btn">Reach Out<i
+                                    class="fas fa-paper-plane"></i></a>
+                        </div>
+                        <div class="navbar-toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!--====== End Area ======-->
+
+
+
+    <!--====== Start Breadcrumb Section ======-->
+    <section class="page-banner overlay pt-170 pb-170 bg_cover"
+        style="background-image: url(assets/images/about/aboutBg.png); height: 450px; ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="page-banner-content text-center text-white">
+                        <!-- <h1 class="page-title">About Us</h1> -->
+                        <ul class="breadcrumb-link text-white">
+                            <!-- <li><a href="index.html">Home</a></li>
+                                <li class="active">About Us</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--====== End Breadcrumb Section ======-->
+    <!--====== Start Features Section ======-->
+    <div class="section-title text-center mt-20 " style="font-family: lato; font-size: larger;">
+        <h1 style="    font-family: Aileron-Regular,Sans-Serif; font-size: 40px; ">About Us</h1>
+        <p>WELCOME TO ericaus.com</p>
+        <p>Your Trusted Partner for Comprehensive Business Solutions and Financial Excellence.
+        </p>
+    </div>
+    <section class="features-section pt-100 pb-50">
+        <div class="container">
+            <div class="row align-items-xl-center">
+                <div class="col-xl-5">
+                    <div class="features-content-box pr-lg-70 mb-50 wow fadeInLeft">
+                        <div class="section-title mb-30">
+                            <span class="sub-title">Why Choose Erica</span>
+                            <h2>Expert Financial Solutions<br>
+                                Backed by AI & Global Talent</h2>
+                        </div>
+                        <p class="mb-30">
+                            At Erica Consultancy Services LLC, we provide forward-thinking financial services—from
+                            accounting to tax planning and payroll—at unmatched value. Our global support team ensures
+                            timely, precise delivery while you focus on growing your business.
+                        </p>
+                        <a href="contact.html" class="main-btn filled-btn">Get in Touch<i
+                                class="far fa-paper-plane"></i></a>
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <div class="features-item-area mb-20 pl-lg-70">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="fancy-icon-box-two mb-30 wow fadeInUp">
+                                    <div class="icon">
+                                        <i class="fas fa-calculator"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3 class="title">Accounts & Bookkeeping</h3>
+                                        <p>Accurate record-keeping and real-time financial reporting powered by expert
+                                            professionals and modern tools.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="fancy-icon-box-two mb-30 wow fadeInUp">
+                                    <div class="icon">
+                                        <i class="fas fa-file-invoice-dollar"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3 class="title">Taxation Services</h3>
+                                        <p>Comprehensive federal and state tax preparation, planning, compliance, and
+                                            audit support with proactive strategies.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="fancy-icon-box-two mb-30 wow fadeInUp">
+                                    <div class="icon">
+                                        <!-- Better compatibility for Payroll -->
+                                        <i class="fas fa-wallet"></i>
+
+
+                                    </div>
+                                    <div class="text">
+                                        <h3 class="title">Payroll Management</h3>
+                                        <p>From timekeeping to tax withholding, we offer end-to-end payroll solutions
+                                            ensuring compliance and accuracy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="fancy-icon-box-two mb-30 wow fadeInUp">
+                                    <div class="icon">
+                                        <i class="fas fa-warehouse"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3 class="title">Inventory Management</h3>
+                                        <p>Optimize inventory planning, valuation, and tracking with seamless
+                                            integration and accurate reporting.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- row end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== Start We Section ======-->
+    <section class="who-we-section">
+        <div class="container">
+            <div class="row align-items-xl-center">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <!--=== We Image Box ===-->
+                    <div class="we-image-box text-center text-lg-left wow fadeInDown">
+                        <img src="assets/images/about/about2.png" class="radius-top-left-right-288"
+                            alt="Erica Consultancy Team">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <!--=== We Content Box ===-->
+                    <div class="we-one_content-box">
+                        <div class="section-title mb-30 wow fadeInUp">
+                            <span class="sub-title">Who We Are</span>
+                            <h2>Empowering Businesses with<br> Smart Financial Services</h2>
+                        </div>
+                        <p class="wow fadeInDown">
+                            Erica Consultancy Services LLC is a forward-thinking financial services firm combining human
+                            expertise with advanced AI tools. With a global team and a presence in both the US and
+                            India, we deliver bookkeeping, taxation, payroll, and business finance services at unmatched
+                            efficiency and price.
+                        </p>
+                        <div class="skill-wrapper wow fadeInUp">
+                            <div class="single-skill-circle text-center">
+                                <div class="inner-circle">
+                                    <div class="line"></div>
+                                    <span class="number">100%</span>
+                                </div>
+                                <h5>Moneyback Guarantee</h5>
+                            </div>
+                            <div class="single-skill-circle text-center">
+                                <div class="inner-circle">
+                                    <div class="line"></div>
+                                    <span class="number">95%</span>
+                                </div>
+                                <h5>Client Retention Rate</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== End We Section ======-->
+
+    <!--====== Start Team Section ======-->
+    <section class="team-section pt-100 pb-70 gray-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7">
+                    <!--====== Section Title ======-->
+                    <div class="section-title text-center mb-50 wow fadeInDown">
+                        <span class="sub-title">Team Member</span>
+                        <h2>We’ve Expert Team Members
+                            Meet With Team</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <!--====== Single Team Item ======-->
+                    <div class="single-team-item mb-30 wow fadeInUp">
+                        <div class="member-img">
+                            <img src="assets/images/team/president_nishant.png" alt="Team Image">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="title">Nishant Kumar</h4>
+                            <p class="position">President</p>
+                            <ul class="social-link">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <!--====== Single Team Item ======-->
+                    <div class="single-team-item mb-30 wow fadeInUp">
+                        <div class="member-img">
+                            <img src="assets/images/team/team-2.jpg" alt="Team Image">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="title">Sumeet Madhukar</h4>
+                            <p class="position">CEO & Founder</p>
+                            <ul class="social-link">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <!--====== Single Team Item ======-->
+                    <div class="single-team-item mb-30 wow fadeInUp">
+                        <div class="member-img">
+                            <img src="assets/images/team/team-3.jpg" alt="Team Image">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="title">Daniel</h4>
+                            <p class="position">Senior Manager</p>
+                            <ul class="social-link">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section><!--====== End Team Section ======-->
+    <!--====== Start What We Section ======-->
+    <section class="we-section pt-100 pb-50">
+        <div class="container">
+            <div class="row align-items-xl-center">
+                <div class="col-xl-6">
+                    <div class="we-content-box mb-10 wow fadeInLeft">
+                        <div class="section-title mb-30">
+                            <span class="sub-title">Who We Are</span>
+                            <h2>Reliable Financial Services<br>
+                                Delivered with Precision</h2>
+                        </div>
+                        <div class="features-list_one">
+                            <div class="single-features-list mb-40">
+                                <div class="icon-inner d-flex align-items-center">
+                                    <div class="icon-check">
+                                        <i class="fas fa-badge-check"></i>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h4>Accuracy & Compliance First</h4>
+                                    <p>We ensure complete accuracy and strict compliance with financial regulations,
+                                        helping you stay audit-ready and stress-free.</p>
+                                </div>
+                            </div>
+                            <div class="single-features-list mb-40">
+                                <div class="icon-inner d-flex align-items-center">
+                                    <div class="icon-check">
+                                        <i class="fas fa-badge-check"></i>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fas fa-tags"></i>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h4>Unbeatable Pricing</h4>
+                                    <p>Our global delivery model allows us to offer expert services at pricing that
+                                        consistently beats the market — without compromising quality.</p>
+                                </div>
+                            </div>
+                            <div class="single-features-list mb-40">
+                                <div class="icon-inner d-flex align-items-center">
+                                    <div class="icon-check">
+                                        <i class="fas fa-badge-check"></i>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="fas fa-users-cog"></i>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h4>Experienced Advisory Team</h4>
+                                    <p>With over 17 years of experience in global advisory services, we help businesses
+                                        streamline operations and improve financial health.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="we-two_image-box mb-20">
+                        <div class="row align-items-end">
+                            <div class="col-md-6">
+                                <div class="we-image mb-30 wow fadeInLeft">
+                                    <img src="assets/images/about/about5.png" alt="Erica Team Working">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="we-image mb-30 wow fadeInRight">
+                                    <img src="assets/images/about/about4.png" alt="Financial Consultation">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="we-image mb-30 pr-lg-30 text-md-end wow fadeInDown">
+                                    <img src="assets/images/about/about3.png" alt="Client Meeting Erica Consultancy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== End What We Section ======-->
+    <div class="about-section p-5">
+        <p>
+            Welcome to Erica Consultancy Services LLC — your trusted partner in financial excellence. At Erica, we are
+            committed to empowering businesses through intelligent financial solutions, expert advisory, and
+            cutting-edge technology that streamlines operations and fuels growth.
+
+            Our journey began with a passion for helping businesses — from startups to established enterprises — gain
+            clarity, control, and confidence in their finances. With a team of qualified professionals and global
+            delivery capabilities, we provide comprehensive services including accounting, bookkeeping, tax planning and
+            filing, payroll management, and business financing.
+
+            Whether you're looking to reduce operational costs, improve financial accuracy, or navigate complex tax
+            laws, Erica Consultancy delivers results with precision and integrity. Our client-centric approach ensures
+            every solution is tailored to your unique needs, helping you stay compliant, agile, and future-ready.
+
+            Erica Consultancy is more than a service provider — we are your financial partner, focused on creating
+            long-term value and peace of mind. Join hundreds of satisfied clients who trust Erica for timely delivery,
+            transparent pricing, and unmatched expertise. Your journey to smarter finance starts here.
+        </p>
+
+    </div>
+
+    <!--====== Start CTA Section ======-->
+    <section class="cta-bg overlay bg_cover pt-150 pb-160"
+        style="background-image: url(assets/images/about/about6.png);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <!--=== CTA Content Box ===-->
+                    <div class="cta-content-box text-center text-white wow fadeInDown">
+                        <h2 class="mb-35">Ready to Simplify Your Finances and Scale Your Business?</h2>
+                        <a href="contact.html" class="main-btn primary-btn">Get a Free Consultation<i
+                                class="far fa-paper-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== End CTA Section ======-->
+
+
+
+    <!--====== Start Footer ======-->
+    <footer class="main-footer black-bg pt-50">
+        <div class="container">
+            <!--=== Footer Top ===-->
+            <div class="footer-top pt-40 wow fadeInUp">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <!--=== Single Info Item ===-->
+                        <div class="single-info-item mb-40">
+                            <div class="icon">
+                                <i class="far fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info">
+                                <span class="title">Location</span>
+                                <p>10375, Church St. Rancho Cucamonga, California, 91730, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!--=== Single Info Item ===-->
+                        <div class="single-info-item mb-40">
+                            <div class="icon">
+                                <i class="far fa-envelope-open"></i>
+                            </div>
+                            <div class="info">
+                                <span class="title">Email</span>
+                                <p><a href="mailto:info@ericaus.com">info@ericaus.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!--=== Single Info Item ===-->
+                        <div class="single-info-item mb-40">
+                            <div class="icon">
+                                <i class="far fa-phone-volume"></i>
+                            </div>
+                            <div class="info">
+                                <span class="title">Phone</span>
+                                <p><a href="tel:+19097405272">+1-909 740 5272</a><br><a href="tel:+19098708718">+1-909-870-8718</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!--=== Social Box ===-->
+                        <div class="social-box mb-40 float-lg-end">
+                            <!-- <ul class="social-link">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--=== Footer Widget Area ===-->
+            <div class="footer-widget-area pt-75 pb-30">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <!--=== About Widget ===-->
+                        <div class="footer-widget about-company-widget mb-40 wow fadeInUp">
+                            <h4 class="widget-title">About</h4>
+                            <div class="footer-content">
+                                <p>We are a forward-thinking global service provider specialized in accounting, tax,
+                                    payroll, and financial services. Erica empowers businesses through expert support
+                                    and AI-driven cost-effective solutions.</p>
+                                <a href="#" class="footer-logo">
+                                    <img src="assets/images/logo/logoNew.png" alt="Erica Consultancy Logo" height="150">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-6">
+                        <!--=== Services Widget ===-->
+                        <div class="footer-widget service-nav-widget mb-40 pl-lg-70 wow fadeInDown">
+                            <h4 class="widget-title">Services</h4>
+                            <div class="footer-content">
+                                <ul class="footer-widget-nav">
+                                    <li><a href="#">Accounts & Book-keeping</a></li>
+                                    <li><a href="#">Financial Reporting & Analysis</a></li>
+                                    <li><a href="#">Budgeting & Forecasting</a></li>
+                                    <li><a href="#">Inventory Management</a></li>
+                                    <li><a href="#">Payroll Management</a></li>
+                                </ul>
+                                <ul class="footer-widget-nav">
+                                    <li><a href="#">Tax Services</a></li>
+                                    <li><a href="#">Transaction Logging</a></li>
+                                    <li><a href="#">Accounts Receivable</a></li>
+                                    <li><a href="#">Invoice to Cash Process</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <!--=== Newsletter Widget ===-->
+                        <div class="footer-widget footer-newsletter-widget mb-40 pl-lg-100 wow fadeInUp">
+                            <h4 class="widget-title">Newsletter</h4>
+                            <div class="footer-content">
+                                <p>Stay informed with the latest updates on tax regulations, financial tips, and
+                                    business insights delivered straight to your inbox.</p>
+                                <form>
+                                    <div class="form_group">
+                                        <label><i class="far fa-paper-plane"></i></label>
+                                        <input type="email" class="form_control" placeholder="Enter your email address"
+                                            name="email" required>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--=== Footer Bottom ===-->
+            <div class="footer-copyright">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!--=== Footer Text ===-->
+                        <div class="footer-text">
+                            <p>&copy; 2025 <span style="color: #F7921E;">ericaus.com</span>, All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <!--=== Footer Nav ===-->
+                        <div class="footer-nav float-lg-end">
+                            <ul>
+                                <li><a href="contact.html">Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--====== Back To Top  ======-->
+    <a href="#" class="back-to-top"><i class="far fa-angle-up"></i></a>
+    <!--====== Jquery js ======-->
+    <script src="assets/vendor/jquery-3.6.0.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/vendor/popper/popper.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--====== Slick js ======-->
+    <script src="assets/vendor/slick/slick.min.js"></script>
+    <!--====== Magnific js ======-->
+    <script src="assets/vendor/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <!--====== Isotope js ======-->
+    <script src="assets/vendor/isotope.min.js"></script>
+    <!--====== Imagesloaded js ======-->
+    <script src="assets/vendor/imagesloaded.min.js"></script>
+    <!--====== Counterup js ======-->
+    <script src="assets/vendor/jquery.counterup.min.js"></script>
+    <!--====== Waypoints js ======-->
+    <script src="assets/vendor/jquery.waypoints.js"></script>
+    <!--====== Nice-select js ======-->
+    <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+    <!--====== jquery UI js ======-->
+    <script src="assets/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <!--====== WOW js ======-->
+    <script src="assets/vendor/wow.min.js"></script>
+    <!--====== Main js ======-->
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

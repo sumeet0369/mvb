@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Adventure, Tours, Travel">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>ericaus.com</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
+    <!--====== Google Fonts ======-->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!--====== Flaticon css ======-->
+    <link rel="stylesheet" href="assets/fonts/flaticon/flaticon_gowilds.css">
+    <!--====== FontAwesome css ======-->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!--====== magnific-popup css ======-->
+    <link rel="stylesheet" href="assets/vendor/magnific-popup/dist/magnific-popup.css">
+    <!--====== Slick-popup css ======-->
+    <link rel="stylesheet" href="assets/vendor/slick/slick.css">
+    <!--====== Jquery UI css ======-->
+    <link rel="stylesheet" href="assets/vendor/jquery-ui/jquery-ui.min.css">
+    <!--====== Nice Select css ======-->
+    <link rel="stylesheet" href="assets/vendor/nice-select/css/nice-select.css">
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="assets/vendor/animate.css">
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+         a {
+            text-decoration: none;
+        }
+
+        .floating_btn {
+            position: fixed;
+            bottom: 80px;
+            right: 25px;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        @keyframes pulsing {
+            to {
+                box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+            }
+        }
+
+        .contact_icon {
+            background-color: #42db87;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 2px 2px 3px #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translatey(0px);
+            animation: pulse 1.5s infinite;
+            box-shadow: 0 0 0 0 #42db87;
+            -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+            -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+            -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+            animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+            font-weight: normal;
+            font-family: sans-serif;
+            text-decoration: none !important;
+            transition: all 300ms ease-in-out;
+        }
+
+
+        .text_icon {
+            margin-top: 8px;
+            color: #707070;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="floating_btn">
+        <a target="_blank" href="https://wa.me/+19097405272">
+            <div class="contact_icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </a>
+        <p class="text_icon">Talk to us?</p>
+    </div>
+    <!--====== Start Preloader ======-->
+    <div class="preloader">
+        <div class="loader">
+            <div class="pre-shadow"></div>
+            <div class="pre-box"></div>
+        </div>
+    </div><!--====== End Preloader ======-->
+    <!--====== Search From ======-->
+    <div class="modal fade search-modal" id="search-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form>
+                    <div class="form_group">
+                        <input type="search" class="form_control" placeholder="Search here" name="search">
+                        <label><i class="fa fa-search"></i></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!--====== Search From ======-->
+    <!--====== Start Header ======-->
+    <header class="header-area header-one transparent-header">
+        <!--====== Header Navigation ======-->
+        <div class="header-navigation navigation-white">
+            <div class="nav-overlay"></div>
+            <div class="container-fluid">
+                <div class="primary-menu">
+                    <!--====== Site Branding ======-->
+                    <div class="site-branding ">
+                        <a href="index.html" class="brand-logo"><img class="logo" src="assets/images/logo/logoNew.png"
+                                alt="Site Logo"></a>
+                    </div>
+                    <!--====== Nav Menu ======-->
+                    <div class="nav-menu">
+                        <!--====== Site Branding ======-->
+                        <div class="mobile-logo mb-30 d-block d-xl-none">
+                            <a href="index.html" class="brand-logo"><img src="assets/images/logo/logoNew.png"
+                                    alt="Site Logo"></a>
+                        </div>
+                        <!--=== Nav Search ===-->
+                        <div class="nav-search mb-30 d-block d-xl-none ">
+                            <form>
+                                <div class="form_group">
+                                    <input type="email" class="form_control" placeholder="Search Here" name="email"
+                                        required>
+                                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--====== main Menu ======-->
+                        <nav class="main-menu">
+                            <ul>
+                                <li class="menu-item has-children "><a href="index.html">Home</a>
+                                    <!-- <ul class="sub-menu">
+                                            <li><a href="index.html">Home 01</a></li>
+                                            <li><a href="index-2.html">Home 02</a></li>
+                                            <li><a href="index-3.html">Home 03</a></li>
+                                            <li><a href="index-4.html">Home 04</a></li>
+                                        </ul> -->
+                                </li>
+                                <li class="menu-item has-children"><a href="whatWeDo.html">What We Do</a>
+
+                                </li>
+                                <!-- <li class="menu-item has-children"><a href="index.html">Erica Pricing</a> -->
+
+                                <!-- </li> -->
+                                <!-- <li class="menu-item has-children"><a href="#">Holiday Packeges </a>
+                                        < <ul class="sub-menu">
+                                            <li><a href="blog-list.html">Blog List</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul> -->
+                                <!-- </li>  -->
+                                <li class="menu-item has-children"><a href="about.html">About Us</a>
+                                    <!-- <ul class="sub-menu">
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="gallery.html">Our Gallery</a></li>
+                                            <li><a href="events.html">Our Events</a></li>
+                                            <li><a href="shop.html">Our Shop</a></li>
+                                            <li><a href="product-details.html">Product Details</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul> -->
+                                </li>
+                                <li class="menu-item has-children"><a class="activebtn" href="contact.html">Contact Us
+                                    </a>
+                                    <!-- <ul class="sub-menu">
+                                            <li><a href="blog-list.html">Blog List</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul> -->
+                                </li>
+                                <!-- <li class="menu-item search-item">
+                                        <div class="search-btn" data-bs-toggle="modal" data-bs-target="#search-modal"><i class="far fa-search"></i></div>
+                                    </li> -->
+                            </ul>
+                        </nav>
+                        <!--====== Menu Button ======-->
+                        <div class="menu-button mt-10 d-xl-none">
+                            <a href="contact.html" class="main-btn secondary-btn">Reach Out<i
+                                    class="fas fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                    <!--====== Nav Right Item ======-->
+                    <div class="nav-right-item">
+                        <div class="menu-button d-xl-block d-none">
+                            <a href="contact.html" class="main-btn primary-btn">Reach Out<i
+                                    class="fas fa-paper-plane"></i></a>
+                        </div>
+                        <div class="navbar-toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!--====== End Area ======-->
+    <!--====== Start Breadcrumb Section ======-->
+    <!--====== Start Page Banner Section ======-->
+    <section class="page-banner overlay pt-170 pb-170 bg_cover"
+        style="background-image: url('assets/images/gallery/contact1.webp'); height: 500px; background-size: 100% 100%;">
+        <!-- <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="page-banner-content text-center text-white">
+                    <h1 class="page-title">Contact Us</h1>
+                    <ul class="breadcrumb-link text-white">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    </section>
+    <!--====== End Page Banner Section ======-->
+
+    <!--====== Start Info Section ======-->
+    <section class="contact-info-section pt-100 pb-60">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="section-title text-center mb-45 wow fadeInDown">
+                        <span class="sub-title">Contact Us</span>
+                        <h2>Ready to Get Our Best Services!<br>Feel Free to Contact With Us</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- Office Location -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-info-item text-center mb-40 wow fadeInUp">
+                        <div class="icon">
+                            <img src="assets/images/icon/icon-1.png" alt="Location Icon">
+                        </div>
+                        <div class="info">
+                            <span class="title">Office Location</span>
+                            <p style="font-size: large;">10375, Church St. Rancho Cucamonga, California, 91730, USA
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email Address -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-info-item text-center mb-40 wow fadeInDown">
+                        <div class="icon">
+                            <img src="assets/images/icon/icon-2.png" alt="Email Icon">
+                        </div>
+                        <div class="info">
+                            <span class="title">Email Address</span>
+                            <p style="font-size: large;"><a href="mailto:info@ericaus.com">info@ericaus.com</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phone Numbers -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-info-item text-center mb-40 wow fadeInUp">
+                        <div class="icon">
+                            <img src="assets/images/icon/icon-3.png" alt="Phone Icon">
+                        </div>
+                        <div class="info">
+                            <span class="title">Hotline</span>
+                            <p style="font-size: large;"><a href="tel:+1-9097405272">+1-909 740 5272</a></p>
+                            <p style="font-size: large;"><a href="tel:+1-3175315383">+1-317 531 5383</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== End Info Section ======-->
+
+    <!--====== Start Map Section ======-->
+    <section class="contact-page-map pb-50 wow fadeInUp">
+        <div class="map-box">
+            <iframe
+                src="https://maps.google.com/maps?q=10375%20Church%20St%2C%20Rancho%20Cucamonga%2C%20California%2091730&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0">
+            </iframe>
+
+        </div>
+    </section>
+    <!--====== End Map Section ======-->
+
+    <!--====== Start Contact Form Section ======-->
+    <section class="contact-section pb-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="section-title text-center mb-50 wow fadeInDown">
+                        <span class="sub-title">Get In Touch</span>
+                        <h2>Send Us a Message</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="contact-area contact-form wow fadeInUp">
+                        <form id="contactForm" class="contactForm" action="assets/php/form-process.php" method="post">
+                            <div class="row">
+                                <!-- Name -->
+                                <div class="col-lg-6">
+                                    <div class="form_group form-group">
+                                        <input type="text" name="name" id="name" class="form_control" placeholder="Name"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="col-lg-6">
+                                    <div class="form_group form-group">
+                                        <input type="text" name="phone_number" id="phone_number" class="form_control"
+                                            placeholder="Phone Number" required>
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="col-lg-6">
+                                    <div class="form_group form-group">
+                                        <input type="email" name="email" id="email" class="form_control"
+                                            placeholder="Email Address" required>
+                                    </div>
+                                </div>
+
+                                <!-- Address -->
+                                <div class="col-lg-6">
+                                    <div class="form_group form-group">
+                                        <input type="text" name="website" id="website" class="form_control"
+                                            placeholder="Address">
+                                    </div>
+                                </div>
+
+                                <!-- Message -->
+                                <div class="col-lg-12">
+                                    <div class="form_group form-group">
+                                        <textarea name="message" id="message" class="form_control" rows="6"
+                                            placeholder="Write Message" required></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="col-lg-12 text-center">
+                                    <button type="submit" class="main-btn primary-btn">
+                                        Send Us Message <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                    <div id="msgSubmit" class="hidden"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div> <!-- /.contact-area -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== End Contact Form Section ======-->
+
+    <!--====== Start Footer ======-->
+    <footer class="main-footer black-bg pt-50">
+        <div class="container">
+            <!--=== Footer Top ===-->
+            <div class="footer-top pt-40 wow fadeInUp">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <!--=== Single Info Item ===-->
+                        <div class="single-info-item mb-40">
+                            <div class="icon">
+                                <i class="far fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info">
+                                <span class="title">Location</span>
+                                <p>10375, Church St. Rancho Cucamonga, California, 91730, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!--=== Single Info Item ===-->
+                        <div class="single-info-item mb-40">
+                            <div class="icon">
+                                <i class="far fa-envelope-open"></i>
+                            </div>
+                            <div class="info">
+                                <span class="title">Email</span>
+                                <p><a href="mailto:ranthombore.online@gmail.com">info@ericaus.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!--=== Single Info Item ===-->
+                        <div class="single-info-item mb-40">
+                            <div class="icon">
+                                <i class="far fa-phone-volume"></i>
+                            </div>
+                            <div class="info">
+                                <span class="title">Phone</span>
+                                <p><a href="tel:+19097405272">+1-909-740-5272</a><br><a href="tel:+19098708718">+1-909-870-8718</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!--=== Social Box ===-->
+                        <div class="social-box mb-40 float-lg-end">
+                            <!-- <ul class="social-link">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=== Footer Widget ===-->
+            <div class="footer-widget-area pt-75 pb-30">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <!--=== Footer Widget ===-->
+                        <div class="footer-widget about-company-widget mb-40 wow fadeInUp">
+                            <h4 class="widget-title">About</h4>
+                            <div class="footer-content">
+                                <p>We are a forward-thinking global service provider entity specialized in Financial
+                                    and other services. We are empowering businesses with expert support, AI tools
+                                    and cost-effective solutions.</p>
+                                <a href="#" class="footer-logo"><img src="assets/images/logo/logoNew.png" alt="Site Logo"
+                                        height="150"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <!--=== Footer Widget ===-->
+                        <div class="footer-widget service-nav-widget mb-40 pl-lg-70 wow fadeInDown">
+                            <h4 class="widget-title">Services</h4>
+                            <div class="footer-content">
+                                <ul class="footer-widget-nav">
+                                    <li><a href="#">Accounts & Book-keeping</a></li>
+                                    <li><a href="#">Financial Reporting & Analysis</a></li>
+                                    <li><a href="#">Budgeting & Forecasting</a></li>
+                                    <li><a href="#">Inventory Management</a></li>
+                                    <li><a href="#">Payroll Management</a></li>
+                                </ul>
+                                <ul class="footer-widget-nav">
+                                    <li><a href="#">Tax Services</a></li>
+                                    <li><a href="#">Transaction Logging</a></li>
+                                    <li><a href="#">Accounts Receivable</a></li>
+                                    <li><a href="#">Invoice to Cash Process</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <!--=== Footer Widget ===-->
+                        <div class="footer-widget footer-newsletter-widget mb-40 pl-lg-100 wow fadeInUp">
+                            <h4 class="widget-title">Newsletter</h4>
+                            <div class="footer-content">
+                                <p>Stay informed with the latest updates on tax regulations, financial tips, and
+                                    business insights delivered straight to your inbox.</p>
+                                <form>
+                                    <div class="form_group">
+                                        <label><i class="far fa-paper-plane"></i></label>
+                                        <input type="email" class="form_control" placeholder="Enter your email address"
+                                            name="email" required>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--=== Footer Copyright ===-->
+            <div class="footer-copyright">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!--=== Footer Text ===-->
+                        <div class="footer-text">
+                            <p>&copy; 2025 <span style="color: #F7921E;">ericaus.com</span>, All Rights Reserved.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <!--=== Footer Nav ===-->
+                        <div class="footer-nav float-lg-end">
+                            <ul>
+                                <li><a href="contact.html">Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--====== Back To Top  ======-->
+    <a href="#" class="back-to-top"><i class="far fa-angle-up"></i></a>
+    <!--====== Jquery js ======-->
+    <script src="assets/vendor/jquery-3.6.0.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/vendor/popper/popper.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--====== Slick js ======-->
+    <script src="assets/vendor/slick/slick.min.js"></script>
+    <!--====== Magnific js ======-->
+    <script src="assets/vendor/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <!--====== Isotope js ======-->
+    <script src="assets/vendor/isotope.min.js"></script>
+    <!--====== Imagesloaded js ======-->
+    <script src="assets/vendor/imagesloaded.min.js"></script>
+    <!--====== Counterup js ======-->
+    <script src="assets/vendor/jquery.counterup.min.js"></script>
+    <!--====== Waypoints js ======-->
+    <script src="assets/vendor/jquery.waypoints.js"></script>
+    <!--====== Nice-select js ======-->
+    <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+    <!--====== jquery UI js ======-->
+    <script src="assets/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <!--====== WOW js ======-->
+    <script src="assets/vendor/wow.min.js"></script>
+    <!--====== Main js ======-->
+    <script src="assets/js/theme.js"></script>
+
+    <!-- For Contact Form -->
+    <script src="assets/vendor/form-validation/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/vendor/form-validation/form-validator.min.js"></script>
+    <script src="assets/vendor/form-validation/contact-form-script.js"></script>
+</body>
+
+</html>
